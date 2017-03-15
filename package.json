@@ -7,8 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "nyaa"
+    "anime",
+    "nodejs",
+    "nyaa-se"
   ],
+  "engines": {
+    "node": ">=6.4.0"
+  },
   "author": "Vija02",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "Vija02/nyaa-available",
+  "dependencies": {
+    "fast-xml-parser": "^2.3.1",
+    "request-promise": "^4.1.1"
+  }
 }
