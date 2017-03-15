@@ -4,7 +4,7 @@
   "description": "Check nyaa.se to see if an episode if available",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "anime",
@@ -19,6 +19,11 @@
   "repository": "Vija02/nyaa-available",
   "dependencies": {
     "fast-xml-parser": "^2.3.1",
+    "request": "^2.81.0",
     "request-promise": "^4.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }

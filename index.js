@@ -19,6 +19,7 @@ function modifyTitle(title) {
 	title = title.trim();
 	return title;
 }
+exports.modifyTitle = modifyTitle;
 
 function checkEpisode(title, episode){
   return new Promise((resolve, reject) => {
