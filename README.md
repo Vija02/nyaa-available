@@ -1,4 +1,4 @@
-# nyaa-available [![Build Status](https://travis-ci.org/Vija02/nyaa-available.svg?branch=master)](https://travis-ci.org/Vija02/nyaa-available)
+# nyaa-available [![npm version](https://badge.fury.io/js/nyaa-available.svg)](https://badge.fury.io/js/nyaa-available) [![Build Status](https://travis-ci.org/Vija02/nyaa-available.svg?branch=master)](https://travis-ci.org/Vija02/nyaa-available)
 Check nyaa.se to see if an episode if available
 
 ## Install
