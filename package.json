@@ -1,6 +1,6 @@
 {
   "name": "nyaa-available",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check nyaa.se to see if an episode if available",
   "main": "index.js",
   "scripts": {
