@@ -8,6 +8,10 @@ const seasonRegEx = /(\d)[stndrh]{2} season/gi;
 const episodeRegEx = /[ _]-[ _](\d{2,3})(?:v\d)?[ _][\(\[-]/;
 const batchRegEx = /[^h\d]\d{2,3}-(\d{2,3})[^p\d]/;
 
+const headers = {
+	'User-Agent': 'Nyaa-Available https://github.com/Vija02/nyaa-available',
+}
+
 function modifyTitle(title) {
   // Replace season
   const match = seasonRegEx.exec(title);
@@ -36,7 +40,8 @@ function checkEpisode(title, episode){
     // Request nyaa.se with params
     request({
   		uri: reqUrl,
-  		method: 'GET'
+  		method: 'GET',
+      headers: headers
   	}).then(rss => {
       // Parse the xml to json
       const json = fastXmlParser.parse(rss);
