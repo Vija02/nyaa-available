@@ -1,6 +1,8 @@
 const fastXmlParser = require('fast-xml-parser');
 const request = require('request-promise');
 
+const leftPad = require('left-pad');
+
 const seasonRegEx = /(\d)[stndrh]{2} season/gi;
 
 const episodeRegEx = /[ _]-[ _](\d{2,3})(?:v\d)?[ _][\(\[-]/;
@@ -27,8 +29,9 @@ function checkEpisode(title, episode){
     title = modifyTitle(title);
 
     // Build the uri
-    let nyaaSuffix = `&cats=1_37&filter=0&term=${title}+${episode.toString()}`;
-    let reqUrl = `https://www.nyaa.se/?page=rss${nyaaSuffix}`;
+    episode = leftPad(episode, 2, 0);
+    const nyaaSuffix = `&cats=1_37&filter=0&term=${title}+${episode}`;
+    const reqUrl = `https://www.nyaa.se/?page=rss${nyaaSuffix}`;
 
     // Request nyaa.se with params
     request({
