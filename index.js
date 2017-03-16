@@ -29,8 +29,8 @@ function checkEpisode(title, episode){
     title = modifyTitle(title);
 
     // Build the uri
-    episode = leftPad(episode, 2, 0);
-    const nyaaSuffix = `&cats=1_37&filter=0&term=${title}+${episode}`;
+    const episodeString = leftPad(episode, 2, 0);
+    const nyaaSuffix = `&cats=1_37&filter=0&term=${title}+${episodeString}`;
     const reqUrl = `https://www.nyaa.se/?page=rss${nyaaSuffix}`;
 
     // Request nyaa.se with params
