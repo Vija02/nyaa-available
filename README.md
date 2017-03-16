@@ -31,5 +31,12 @@ Checks the if the episode given exists. Returns a promise.
 
 Modify the title and return a name more suitable to search in nyaa.se
 
+## FAQ
+
+### Why are there occasional errors when calling the method many times?
+
+Make sure that you query the site at an acceptable pace. For example, 1 request/second.
+
 ## Help
-If there is any problem with the package, please create an issue. Thanks!
+
+If there is any problem with the package, please create an issue on github. Thanks!
