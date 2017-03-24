@@ -1,5 +1,5 @@
 const fastXmlParser = require('fast-xml-parser');
-const request = require('request-promise');
+const axios = require('axios');
 
 const leftPad = require('left-pad');
 
@@ -38,9 +38,7 @@ function checkEpisode(title, episode){
     const reqUrl = `https://www.nyaa.se/?page=rss${nyaaSuffix}`;
 
     // Request nyaa.se with params
-    request({
-  		uri: reqUrl,
-  		method: 'GET',
+    axios.get(reqUrl, {
       headers: headers
   	}).then(rss => {
       // Parse the xml to json
