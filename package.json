@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": "Vija02/nyaa-available",
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.16.1",
     "fast-xml-parser": "^2.3.1",
     "left-pad": "^1.1.3"
   },

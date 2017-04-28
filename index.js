@@ -42,7 +42,7 @@ function checkEpisode(title, episode){
       headers: headers
   	}).then(rss => {
       // Parse the xml to json
-      const json = fastXmlParser.parse(rss);
+      const json = fastXmlParser.parse(rss.data);
       // Check if there's any item
       if(Array.isArray(json.rss.channel.item)){
         json.rss.channel.item.forEach((item) => {
