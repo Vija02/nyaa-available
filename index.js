@@ -35,9 +35,9 @@ function checkEpisode(title, episode){
     // Build the uri
     const episodeString = leftPad(episode, 2, 0);
     const nyaaSuffix = `&cats=1_37&filter=0&term=${title}+${episodeString}`;
-    const reqUrl = `https://www.nyaa.se/?page=rss${nyaaSuffix}`;
+    const reqUrl = `https://www.nyaa.si/?page=rss${nyaaSuffix}`;
 
-    // Request nyaa.se with params
+    // Request nyaa.si with params
     axios.get(reqUrl, {
       headers: headers
   	}).then(rss => {

@@ -1,5 +1,5 @@
 # nyaa-available [![npm version](https://badge.fury.io/js/nyaa-available.svg)](https://badge.fury.io/js/nyaa-available) [![Build Status](https://travis-ci.org/Vija02/nyaa-available.svg?branch=master)](https://travis-ci.org/Vija02/nyaa-available)
-Check nyaa.se to see if an episode if available
+Check nyaa.si to see if an episode if available
 
 ## Install
 
@@ -29,7 +29,7 @@ Checks the if the episode given exists. Returns a promise.
 
 ### `.modifyTitle(string title): string`
 
-Modify the title and return a name more suitable to search in nyaa.se
+Modify the title and return a name more suitable to search in nyaa.si
 
 ## FAQ
 
